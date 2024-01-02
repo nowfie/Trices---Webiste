@@ -1,0 +1,59 @@
+{% extends "main.html" %}
+{% block title %}
+<title>Trices | Services</title>
+{% endblock title %}
+{% block content %}
+<div id="full" class='zoom-div'>
+    <section id="ind" class="col-11 m-auto col-lg-10 px-0 pt-5 pt-lg-5" data-aos='zoom-in'>
+        <div class="ind-box d-flex justify-content-center align-items-center">
+            <h1>Services</h1>
+        </div>
+    </section>
+    <section id="services" class=" col-lg-10 col-11 m-auto d-flex flex-column justify-content-center  align-items-center">
+        <div class="row col-12 mb-lg-5 mb-0 d-flex flex-lg-row flex-column">
+            <div class="col-lg-6 col-12 services-information p-0" data-aos='fade-right'>
+                <h1>Giving your business some original ideas</h1>
+            </div>
+            <div class="col-lg-6 col-12 p-0" data-aos='fade-left' data-aos-delay="300">
+                <p class='my-3 my-lg-0 my-xl-3 services-para'>A cutting-edge IT solution that harnesses the power of the artificial intelligence to instantly diagnose and resolve the various technical issue.</p>
+            </div>
+        </div>
+        <div class="services-main d-flex flex-column justify-content-center align-items-center col-12">
+            <div class="row col-12 m-auto my-lg-3 justify-content-between gap-3 gap-xxl-0">
+                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <span class="services-icon"><i class="fa-solid fa-microchip p-lg-4 p-3"></i></span>
+                    <h3>Artificial Intelligence</h3>
+                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5  "  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <span class="services-icon"><i class="fa-solid fa-magnifying-glass-chart p-lg-4 p-3"></i></span>
+                    <h3>Data Science & Analytics</h3>
+                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <span class="services-icon"><i class="fa-solid fa-code p-lg-4 p-3"></i></span>
+                    <h3>Web Application</h3>
+                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
+                </div>
+           
+                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <span class="services-icon"><i class="fa-solid fa-mobile p-lg-4 p-3"></i></span>
+                    <h3>Mobile Application</h3>
+                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5  " data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
+                    <span class="services-icon"><i class="fa-solid fa-hashtag p-3 p-lg-4"></i></span>
+                    <h3>Social Media Marketting</h3>
+                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-lg-4 services-box my-5 p-5 my-lg-5 p-lg-5  " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <span class="services-icon"><i class="fa-brands fa-searchengin p-lg-4 p-3"></i></span>
+                    <h3>Search Engine Optimization</h3>
+                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+<div class="center-main mb-5 justify-content-between d-flex flex-row">
+    <a class='px-4 py-2' href='#'>HiTech</a>
+    <a class='px-4 py-2' href='#'>Media</a>
+    <a class='px-4 py-2' href='#'>Industrial</a>
+    <a class='px-4 py-2' href='#'>Banking</a>
+    <a class='px-4 py-2' href='#'>Analys</a>
+    <a class='px-4 py-2' href='#'>Deploy</a> 
+</div>
+
+:root {
+    --bg-color-prmiary: #0F0F1A;
+    --bg-color-secondary: #000;
+    --text-color: white;
+    --para-color: #ffffffb3;
+    --btn-color: #0084FB;
+    --box-bg-color: #1e1d22;
+}

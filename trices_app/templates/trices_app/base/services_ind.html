@@ -1,0 +1,102 @@
+{% extends "main.html" %}
+{% block title %}
+<title>Trices | Service name</title>
+{% endblock title %}
+{% block content %}
+<div id="full" class='zoom-div'>
+    <section id="ind" class="col-11 m-auto col-lg-10 px-0 pt-5 pt-lg-5" data-aos='zoom-in'>
+        <div class="ind-box d-flex justify-content-center align-items-center">
+            <h1>Service name</h1>
+        </div>
+    </section>
+    <section id="ser-ind" class="col-11 col-lg-10 m-auto pt-5">
+        <div class="first-row  d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="ser-ind-content ">
+                        <h1 class="mb-3" data-aos='fade-right' data-aos-delay='300'>The Best Digital Agency Around The World</h1>
+                        <p class='mb-4' data-aos='fade-left' data-aos-delay='500'>Web designing in a powerful way of just not a profession, however for our Company. We have a tendency to believe the idea.</p>
+                        <h3 class="mb-3" data-aos='fade-right' data-aos-delay='700'>Our Achievements</h3>
+                        <p class="mb-3" data-aos='fade-left' data-aos-delay='900'>Web designing in a powerful way of just not a profession, however for our Company. We have a tendency to believe the idea that smart looking,tendency to believe the idea that smart looking.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="ser-ind-image d-flex justify-content-center" data-aos='zoom-in'>
+                        {% load static %}
+                        <img src="{% static "images/services-1.jpg" %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 ser-ind-flex d-flex flex-column mt-5">
+                <label for="file" class='mb-2' data-aos='fade-left' >Creative thinking</label>
+                <progress id="fileProgress" class='mb-4' value="95" max="100" data-aos='zoom-in' data-aos-delay='200'></progress>
+                <label for="file" class='mb-2' data-aos='fade-left' data-aos-delay='300'>Communication</label>
+                <progress id="fileProgress" class='mb-4' value="90" max="100" data-aos='zoom-in' data-aos-delay='400'></progress>
+                <label for="file" class='mb-2' data-aos='fade-left' data-aos-delay='600'>Research</label>
+                <progress id="fileProgress" class='mb-4' value="85" max="100" data-aos='zoom-in' data-aos-delay='650'></progress>
+            </div>
+        </div>
+    </section>
+    <section id="center" class="col-lg-10 col-11 m-auto d-flex flex-column justify-content-center align-items-center ">
+        <div class="row  col-12 mb-3 mb-lg-5 d-flex flex-lg-row flex-column">
+            <div class="col-lg-6 p-0 col-11 services-information">
+                <h1 data-aos='fade-right'>Giving your business some original ideas</h1>
+            </div>
+            <div class="col-lg-6 p-0 col-11">
+                <p class='my-3 my-lg-0 my-xl-3 services-para' data-aos='fade-left'>A cutting-edge IT solution that harnesses the power of the artificial intelligence to instantly diagnose and resolve the various technical issue.</p>
+            </div>
+        </div>
+        <div class="row center-main mb-0 mb-lg-5 d-flex justify-content-between">
+            <div class="col-lg-2 col-4 d-flex mb-3 mb-lg-0 justify-content-center p-0">
+                <h6 class='text-align-center  py-3'>Appointment</h6>
+            </div>
+            <div class="col-lg-2 col-4 d-flex mb-3 mb-lg-0 justify-content-center p-0">
+                <h6 class='text-align-center  py-3'>Meetup</h6>
+            </div>
+            <div class="col-lg-2 col-4 d-flex mb-3 mb-lg-0 justify-content-center p-0">
+                <h6 class='text-align-center  py-3'>Requirments</h6>
+            </div>
+            <div class="col-lg-2 col-4 d-flex mb-3 mb-lg-0 justify-content-center p-0">
+                <h6 class='text-align-center  py-3'>Reference</h6>
+            </div>
+            <div class="col-lg-2 col-4 d-flex mb-3 mb-lg-0 justify-content-center p-0">
+                <h6 class='text-align-center  py-3'>Project</h6>
+            </div>
+            <div class="col-lg-2 col-4 d-flex mb-3 mb-lg-0 justify-content-center p-0">
+                <h6 class='text-align-center  py-3'>Deploy</h6>
+            </div>
+        </div>
+        <div class="row col-12 mt-4 mt-lg-5">
+            <div class="col-lg-6 col-12 center-image mb-lg-0 mb-3 ps-lg-0 pe-lg-3 p-0" data-aos='fade-right'>
+                <img src="{% static "images/services-1.jpg" %}" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-12 center-content p-0">
+                <h1 class='mb-3' data-aos='fade-right'>Accelerating your information business standards</h1>
+                <p data-aos='fade-left'>Empowering the businesses with advanced technology solutions to tackle modern digital challenges and opportunities.</p>
+                <div class="center-inner d-flex flex-lg-row flex-column mb-4 mt-4">
+                    <div class="center-inner-image mb-3" data-aos='fade-left' data-aos-delay='300'>
+                        <img src="{% static "images/center.jpg" %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="center-inner-content ms-lg-4 ms-0" data-aos='fade-left'>
+                        <p>It leverages emerging tech for customized solutions that boost efficiency, productivity, business performance, quality, and business support systems.It leverages emerging tech for customized solutions</p>
+                    </div>
+                </div>
+                <!--<div class="row center-list">
+                    <ul>
+                        <li>Explore & adopt latest technologies that align with business goals.</li>
+                        <li>Continuously adapt solutions methods for evolving tech trends.</li>
+                        <li>Plan tech integration aligned with lasting business strategies.</li>
+                        <li>Build trust by securing data with robust measures in solutions.</li>
+                    </ul>
+                </div>-->
+                <a href="{% url "about" %}" class="px-lg-4 py-lg-3 px-4 py-2">READ MORE <i class="fa fa-angle-right ms-2" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock content %}

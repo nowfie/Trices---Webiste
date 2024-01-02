@@ -1,0 +1,55 @@
+{% extends "main.html" %}
+{% block title %}
+<title>Trices | Contact</title>
+{% endblock title %}
+{% block content %}
+<div id="full" class='zoom-div'>
+    <section id="ind" class="col-11 m-auto col-lg-10 px-0 pt-5 pt-lg-5" data-aos='zoom-in'>
+        <div class="ind-box d-flex justify-content-center align-items-center">
+            <h1>Contact</h1>
+        </div>
+    </section>
+    <section id="contact" class="col-lg-10 col-11 m-auto pt-4">
+        <div class="row">
+            <div class="col-12 col-lg-6 p-3">
+                <h1 data-aos='fade-right'>Get in touch</h1>
+                <p data-aos='fade-left' data-aos-delay='300'>Unlock the Potential of Your IT Landscape and Contact Us Today and Start Your the Transformation Journey!</p>
+                <div class="contact-num  d-flex flex-lg-row flex-column gap-3 my-4">
+                    <span class='phn' >+91 9786221304</span>
+                    <span class='mail'>tricestechofficial@gmail.com</span>
+                </div>
+                
+                <div class=" contact-social d-flex flex-row gap-3 my-4">
+                    <a href="#" data-aos='zoom-in' data-aos-delay='700'><i class="p-2 fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" data-aos='zoom-in' data-aos-delay='900'><i class="p-2 fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="#" data-aos='zoom-in' data-aos-delay='1100'><i class="p-2 fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" data-aos='zoom-in' data-aos-delay='1300'><i class="p-2 fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" data-aos='zoom-in' data-aos-delay='1500'><i class="p-2 fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <div class="row contact-img d-flex mt-5" data-aos='fade-up' data-aos-delay='1700'>
+                    {% load static %}
+                    <img src="{% static "images/bg_blue.png" %}" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-3" data-aos='fade-up'>
+                <div class="contact-input-box d-flex flex-column p-lg-5 p-4">
+                    <label for="">Name</label>
+                    <input class='my-3' type="text" name="" id="">
+                    <label for="">Email</label>
+                    <input class='my-3' type="text" name="" id="">
+                    <label for="">Company</label>
+                    <input class='my-3' type="text" name="" id="">
+                    <label for="">Message</label>
+                    <input class='my-3' type="text" name="" id="msg">
+                    <div class="contact sumbit d-felx flex-row mt-lg-4 mt-3">
+                        <button class='button px-lg-5 py-lg-3 px-4 py-2 me-3'>Send</button>
+                        <p class='d-inline'>Want to work together? Lets collaborate!</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock content %}
