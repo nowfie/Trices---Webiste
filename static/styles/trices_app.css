@@ -1042,7 +1042,7 @@ footer {
         width: 230px !important;
     }
     .services-box {
-        width: 420px !important;
+        width: 100% !important;
         height: 160px !important;
         border-radius: 10px;
         position: relative;
