@@ -696,10 +696,6 @@ progress::-webkit-progress-bar {
     font-size: 13px;
 }
 
-.center-content a:hover {
-    box-shadow: rgba(255, 255, 255, 0.568) 2px 2px 50px;
-}
-
 .line {
     position: relative;
 }
@@ -744,6 +740,11 @@ progress::-webkit-progress-bar {
     color: var(--text-color);
     background-color: var(--box-bg-color);
     border-radius: 10px;
+}
+
+.center-content a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color-prmiary);
 }
 
 
@@ -810,7 +811,8 @@ progress::-webkit-progress-bar {
 }
 
 .button:hover {
-    box-shadow: rgba(255, 255, 255, 0.568) 2px 2px 50px;
+    background-color: var(--text-color);
+    color: var(--bg-color-prmiary);
 }
 
 
@@ -836,13 +838,13 @@ footer {
     color: var(--text-color);
     list-style-type: none;
     line-height: 1.9;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 #address li {
     list-style-type: none;
     color: var(--text-color);
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.9;
 }
 
