@@ -1,8 +1,9 @@
 <footer id="footer" class="col-12 pt-5">
-    <div class="row col-lg-11 col-11 m-auto">
+    <div class="row col-lg-10 col-11 m-auto">
         <div class="company-main col-lg-4 col-12 pb-3 pt-0 px-0">
-            <div class="company-logo mb-3">
-                <h1>Logo</h1>
+            <div class="company-logo mb-4">
+                {% load static %}
+                <img src="{% static "images/trices name png.png" %}" alt="" class="img-fluid">
             </div>
             <div class="company-content">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem fuga, nulla sint inventore blanditiis veniam architecto facilis suscipit nesciunt reprehenderit!</p>
@@ -11,11 +12,11 @@
         <div class="company-links col-lg-4 col-4 d-flex flex-row justify-content-start justify-content-lg-center p-0 my-4 my-lg-0">
             <ul class='p-0'>
                 <h3>Quick Links</h3>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Our Serviecs</li>
-                <li>Our Product</li>
-                <li>Contact us</li>
+                <a href="{% url "home" %}"><li>Home</li></a>
+                <a href="{% url "about" %}"><li>About us</li></a>
+                <a href="{% url "services" %}"><li>Our Services</li></a>
+                <a href="{% url "home" %}"><li>Our Product</li></a>
+                <a href="{% url "contact" %}"><li>Contact us</li></a>
             </ul>
         </div>
         <!--<div class="company-links col-lg-2 col-4 d-flex flex-row justify-content-lg-center justify-content-center p-0 my-4 my-lg-0">
@@ -37,7 +38,7 @@
                 <li>Web Development</li>
             </ul>
         </div>-->
-        <div class="company-address col-lg-3 col-12 p-0">
+        <div class="company-address col-lg-4 col-12 p-0">
             <ul id='address' class='p-0 px-md-2'>
                 <li> <span><i class="fas fa-location   me-2"></i></span> First Floor, Syed Ammal Innovation And Incubation Council, Syed Ammal Engiineering College, Ramanathapuram</li>
                 <li class='mb-1'>Tamilnadu - 623502</li>

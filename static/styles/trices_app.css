@@ -373,7 +373,7 @@ body {
 .about-icon i {
     color: var(--text-color);
     background-color: #eeeeee3d !important;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -576,17 +576,38 @@ body {
     border-radius: 10px;
 }
 
+.ser-ind-content p {
+    color: var(--para-color);
+    line-height: 1.9;
+    font-size: 16px;
+    text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000;
+}
+
 .ser-ind-content h3 {
     color: var(--text-color);
     font-size: 26px;
     text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000;
 }
 
-.ser-ind-content p {
-    color: var(--para-color);
-    line-height: 1.9;
-    font-size: 16px;
+.ser-ind-box i {
+    color: var(--text-color);
+    background-color: #eeeeee3d !important;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.ser-ind-box-inner {
+    width: 300px !important;
+    background-color: var(--box-bg-color);
+    border-radius: 5px;
+    font-weight: normal;
+    background-image: url(/static/images/bg-design.png);
+    background-size: 100%;
     text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000;
+}
+
+.ser-ind-box h5 {
+    color: var(--text-color);
 }
 
 .ser-ind-info p {
@@ -818,6 +839,18 @@ progress::-webkit-progress-bar {
 
 /*---Footer---*/
 
+.company-logo {
+    width: 200px;
+    position: relative;
+}
+
+.company-logo img {
+    width: 100%;
+    position: absolute;
+    top: -80;
+    left: -30;
+}
+
 footer {
     background-color: var(--box-bg-color);
     background-image: url(/static/images/bg-design.png);
@@ -830,7 +863,7 @@ footer {
 
 #footer p {
     color: var(--para-color);
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.9;
 }
 
@@ -849,7 +882,7 @@ footer {
 }
 
 #footer h3 {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--text-color);
 }
 
@@ -858,6 +891,15 @@ footer {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
+    .ser-ind-box i {
+        font-size: 1.3rem;
+    }
+    .ser-ind-box-inner {
+        width: 100% !important;
+    }
+    .ser-ind-box h5 {
+        color: var(--text-color);
+    }
     .center-inner-image img {
         border-radius: 30px;
     }
@@ -872,6 +914,13 @@ footer {
         width: 170px;
     }
     .logo-main img {
+        top: -70;
+        left: -20;
+    }
+    .company-logo {
+        width: 170px;
+    }
+    .company-logo img {
         top: -70;
         left: -20;
     }
@@ -934,6 +983,25 @@ footer {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+    .company-logo {
+        width: 150px;
+        position: relative;
+    }
+    .company-logo img {
+        width: 100%;
+        position: absolute;
+        top: -60;
+        left: -20;
+    }
+    .ser-ind-box i {
+        font-size: 1.3rem;
+    }
+    .ser-ind-box-inner {
+        width: 100% !important;
+    }
+    .ser-ind-box h5 {
+        color: var(--text-color);
+    }
     .center-main::before {
         display: none;
     }
@@ -1140,6 +1208,15 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ser-ind-box i {
+        font-size: 1.3rem;
+    }
+    .ser-ind-box-inner {
+        width: 343px !important;
+    }
+    .ser-ind-box h5 {
+        color: var(--text-color);
+    }
     .center-inner-image img {
         border-radius: 30px;
     }
@@ -1159,6 +1236,13 @@ footer {
         width: 170px;
     }
     .logo-main img {
+        top: -70;
+        left: -20;
+    }
+    .company-logo {
+        width: 170px;
+    }
+    .company-logo img {
         top: -70;
         left: -20;
     }
@@ -1218,6 +1302,16 @@ footer {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .ser-ind-box i {
+        font-size: 1rem;
+    }
+    .ser-ind-box-inner {
+        width: 199px !important;
+    }
+    .ser-ind-box h5 {
+        color: var(--text-color);
+        font-size: 15px;
+    }
     .center-main h6 {
         width: 110px;
         font-size: 14px;
@@ -1238,6 +1332,13 @@ footer {
         width: 170px;
     }
     .logo-main img {
+        top: -70;
+        left: -50;
+    }
+    .company-logo {
+        width: 170px;
+    }
+    .company-logo img {
         top: -70;
         left: -50;
     }
@@ -1308,7 +1409,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
     #fullx,
     #full {
         margin-top: -60 !important;
@@ -1320,6 +1421,13 @@ footer {
         width: 170px;
     }
     .logo-main img {
+        top: -70;
+        left: -20;
+    }
+    .company-logo {
+        width: 170px;
+    }
+    .company-logo img {
         top: -70;
         left: -20;
     }
@@ -1381,6 +1489,15 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 2299px) {
+    .ser-ind-box i {
+        font-size: 1.3rem;
+    }
+    .ser-ind-box-inner {
+        width: 286px !important;
+    }
+    .ser-ind-box h5 {
+        color: var(--text-color);
+    }
     #fullx,
     #full {
         margin-top: -60 !important;

@@ -35,37 +35,13 @@
         </div>
         <div class="services-main d-flex flex-column justify-content-center align-items-center col-12">
             <div class="row col-12 m-auto my-lg-3 justify-content-between gap-3 gap-xxl-0">
+                {% for service,details in services.items %}
                 <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <span class="services-icon"><i class="fa-solid fa-microchip p-lg-4 p-3"></i></span>
-                    <h3>Artificial Intelligence</h3>
-                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
+                    <span class="services-icon">{{details.icon|safe}}</span>
+                    <h3>{{service}}</h3>
+                    <a class='services-enter' href="{% url "ser_ind" service %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
                 </div>
-                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5  "  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <span class="services-icon"><i class="fa-solid fa-magnifying-glass-chart p-lg-4 p-3"></i></span>
-                    <h3>Data Science & Analytics</h3>
-                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <span class="services-icon"><i class="fa-solid fa-code p-lg-4 p-3"></i></span>
-                    <h3>Web Application</h3>
-                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
-                </div>
-           
-                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <span class="services-icon"><i class="fa-solid fa-mobile p-lg-4 p-3"></i></span>
-                    <h3>Mobile Application</h3>
-                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-lg-4 col-xxl-4 services-box my-5 p-5 my-lg-5 p-lg-5  " data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
-                    <span class="services-icon"><i class="fa-solid fa-hashtag p-3 p-lg-4"></i></span>
-                    <h3>Social Media Marketting</h3>
-                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-lg-4 services-box my-5 p-5 my-lg-5 p-lg-5  " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <span class="services-icon"><i class="fa-brands fa-searchengin p-lg-4 p-3"></i></span>
-                    <h3>Search Engine Optimization</h3>
-                    <a class='services-enter' href="{% url "ser_ind" %}"><i class="fa fa-arrow-right p-3" aria-hidden="true"></i></a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -186,7 +162,7 @@
                         <li>Build trust by securing data with robust measures in solutions.</li>
                     </ul>
                 </div>-->
-                <a href="{% url "about" %}" class="px-lg-4 py-lg-3 px-4 py-2">READ MORE <i class="fa fa-angle-right ms-2" aria-hidden="true"></i> </a>
+                <a href="{% url "contact" %}" class="px-lg-4 py-lg-3 px-4 py-2">CONTACT US <i class="fa fa-angle-right ms-2" aria-hidden="true"></i> </a>
             </div>
         </div>
     </section>

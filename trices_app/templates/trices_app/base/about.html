@@ -189,17 +189,18 @@
                         <li>Build trust by securing data with robust measures in solutions.</li>
                     </ul>
                 </div>-->
-                <a href="{% url "about" %}" class="px-lg-4 py-lg-3 px-4 py-2">READ MORE <i class="fa fa-angle-right ms-2" aria-hidden="true"></i> </a>
+                <a href="{% url "contact" %}" class="px-lg-4 py-lg-3 px-4 py-2">CONTACT US <i class="fa fa-angle-right ms-2" aria-hidden="true"></i> </a>
             </div>
         </div>
     </section>
     <section id="team" class="col-lg-10 col-11 m-auto d-flex flex-column justify-content-center align-items-center ">
         <h1 class='text-center'>Awesome Team</h1>
         <div class="row team-flex mt-3 col-12 d-flex flex-lg-row flex-row justify-content-between">
+            {% for member,details in team_function.items %}
             <div class=" team-box col-lg-4 p-5">
-                <img src="{% static "images/person1.png" %}" alt="" class="img-fluid mb-3">
-                <h3 class='mb-3'>MOHAMMED NOWFAL</h3>
-                <h4 class='mb-4'>EXECUTIVE OFFICER</h4>
+                <img src="{% static "images/" %}{{ details.image }}" alt="" class="img-fluid mb-3">
+                <h3 class='mb-3'>{{member}}</h3>
+                <h4 class='mb-4'>{{details.role}}</h4>
                 <div class="team-social">
                     <a href="#"><i class="fab fa-linkedin " aria-hidden="true"></i></a>
                     <a href="#"><i class="fab fa-github ms-3"  aria-hidden="true"></i></a>
@@ -207,28 +208,7 @@
                     <a href="#"><i class="fa fa-envelope ms-3" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class=" team-box col-lg-4 p-5">
-                <img src="{% static "images/person1.png" %}" alt="" class="img-fluid">
-                <h3 class='my-3'>WASIM HUSSAIN</h3>
-                <h4 class='mb-4'>MARKETING LEAD</h4>
-                <div class="team-social">
-                    <a href="#"><i class="fab fa-linkedin " aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-github ms-3"  aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram ms-3"  aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-envelope ms-3" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class=" team-box col-lg-4 p-5">
-                <img src="{% static "images/person1.png" %}" alt="" class="img-fluid">
-                <h3 class='my-3'>VENKETEKRISHNAN</h3>
-                <h4 class='mb-4'>DATA SCIENTIST</h4>
-                <div class="team-social">
-                    <a href="#"><i class="fab fa-linkedin " aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-github ms-3"  aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram ms-3"  aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-envelope ms-3" aria-hidden="true"></i></a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
 </div>

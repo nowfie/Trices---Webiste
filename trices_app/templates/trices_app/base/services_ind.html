@@ -6,7 +6,7 @@
 <div id="full" class='zoom-div'>
     <section id="ind" class="col-11 m-auto col-lg-10 px-0 pt-5 pt-lg-5" data-aos='zoom-in'>
         <div class="ind-box d-flex justify-content-center align-items-center">
-            <h1>Service name</h1>
+            <h1>{{name}}</h1>
         </div>
     </section>
     <section id="ser-ind" class="col-11 col-lg-10 m-auto pt-5">
@@ -14,10 +14,25 @@
             <div class="row">
                 <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
                     <div class="ser-ind-content ">
-                        <h1 class="mb-3" data-aos='fade-right' data-aos-delay='300'>The Best Digital Agency Around The World</h1>
-                        <p class='mb-4' data-aos='fade-left' data-aos-delay='500'>Web designing in a powerful way of just not a profession, however for our Company. We have a tendency to believe the idea.</p>
-                        <h3 class="mb-3" data-aos='fade-right' data-aos-delay='700'>Our Achievements</h3>
-                        <p class="mb-3" data-aos='fade-left' data-aos-delay='900'>Web designing in a powerful way of just not a profession, however for our Company. We have a tendency to believe the idea that smart looking,tendency to believe the idea that smart looking.</p>
+                        <h1 class="mb-3" data-aos='fade-right' data-aos-delay='300'>{{content.heading}}</h1>
+                        <p class='mb-4' data-aos='fade-left' data-aos-delay='500'>{{content.description}}</p>
+                        <h3 class="mb-3" data-aos='fade-right' data-aos-delay='700'>Features</h3>
+                        <div class="row ser-ind-box gap-3 mx-auto">
+                            <div class=" col-lg-6 ser-ind-box-inner py-2 px-3">
+                                <h5 class='mb-0'><i class="fa fa-check p-2 me-3" aria-hidden="true"></i> Responsive</h5>
+                            </div>
+                            <div class=" col-lg-6 ser-ind-box-inner py-2 px-3">
+                                <h5 class='mb-0'><i class="fa fa-check p-2 me-3" aria-hidden="true"></i> Responsive</h5>
+                            </div>
+                        </div>
+                        <div class="row ser-ind-box gap-3 mx-auto my-3">
+                            <div class=" col-lg-6 ser-ind-box-inner py-2 px-3">
+                                <h5 class='mb-0'><i class="fa fa-check p-2 me-3" aria-hidden="true"></i> Responsive</h5>
+                            </div>
+                            <div class=" col-lg-6 ser-ind-box-inner py-2 px-3">
+                                <h5 class='mb-0'><i class="fa fa-check p-2 me-3" aria-hidden="true"></i> Responsive</h5>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
@@ -93,7 +108,7 @@
                         <li>Build trust by securing data with robust measures in solutions.</li>
                     </ul>
                 </div>-->
-                <a href="{% url "about" %}" class="px-lg-4 py-lg-3 px-4 py-2">READ MORE <i class="fa fa-angle-right ms-2" aria-hidden="true"></i> </a>
+                <a href="{% url "contact" %}" class="px-lg-4 py-lg-3 px-4 py-2">CONTACT US <i class="fa fa-angle-right ms-2" aria-hidden="true"></i> </a>
             </div>
         </div>
     </section>
