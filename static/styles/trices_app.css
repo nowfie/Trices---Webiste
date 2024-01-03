@@ -847,7 +847,7 @@ progress::-webkit-progress-bar {
 .company-logo img {
     width: 100%;
     position: absolute;
-    top: -80;
+    top: -65;
     left: -30;
 }
 
@@ -921,7 +921,7 @@ footer {
         width: 170px;
     }
     .company-logo img {
-        top: -70;
+        top: -45;
         left: -20;
     }
     .home-image img {
@@ -990,7 +990,7 @@ footer {
     .company-logo img {
         width: 100%;
         position: absolute;
-        top: -60;
+        top: -35;
         left: -20;
     }
     .ser-ind-box i {
@@ -1243,7 +1243,7 @@ footer {
         width: 170px;
     }
     .company-logo img {
-        top: -70;
+        top: -45;
         left: -20;
     }
     .home-image img {
@@ -1339,8 +1339,8 @@ footer {
         width: 170px;
     }
     .company-logo img {
-        top: -70;
-        left: -50;
+        top: -45;
+        left: -30;
     }
     .home-image img {
         width: 250 !important;
@@ -1428,7 +1428,7 @@ footer {
         width: 170px;
     }
     .company-logo img {
-        top: -70;
+        top: -45;
         left: -20;
     }
     .home-image img {
