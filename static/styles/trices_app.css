@@ -120,7 +120,7 @@ body {
     width: 100%;
     position: absolute;
     top: -80;
-    left: -80;
+    left: -120;
 }
 
 .logo-main h1 {
@@ -270,6 +270,43 @@ body {
     color: var(--text-color);
     font-size: 56px;
     font-weight: 600;
+    text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000;
+}
+
+.believe-content {
+    position: relative;
+}
+
+.believe-content div {
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.believe-content div i {
+    font-size: 1.9rem;
+    background-color: var(--box-bg-color);
+    color: var(--btn-color);
+    border: 8px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -50;
+}
+
+.believe-content div h3 {
+    color: var(--text-color);
+    text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000;
+}
+
+.believe-content div p {
+    color: var(--para-color);
+    font-size: 16px;
     text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000;
 }
 
@@ -529,7 +566,9 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background: linear-gradient(to right, var(--box-bg-color) 0%, var(--box-bg-color) 50%, var(--bg-color-prmiary) 50%, var(--bg-color-prmiary) 100%);
+    /*background: linear-gradient(to right, var(--box-bg-color) 0%, var(--box-bg-color) 50%, var(--bg-color-prmiary) 50%, var(--bg-color-prmiary) 100%);*/
+    background-color: var(--box-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .social-logo {
@@ -555,7 +594,6 @@ body {
 }
 
 #team img {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     width: 130px;
 }
 
@@ -594,6 +632,7 @@ body {
     background-color: #eeeeee3d !important;
     font-size: 1.3rem;
     border-radius: 5px;
+    text-shadow: none !important;
 }
 
 .ser-ind-box-inner {
@@ -603,11 +642,14 @@ body {
     font-weight: normal;
     background-image: url(/static/images/bg-design.png);
     background-size: 100%;
-    text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .ser-ind-box h5 {
     color: var(--text-color);
+    font-weight: 500;
+    text-shadow: 3px 0px 7px #252525, -3px 0px 7px #323232, 0px 4px 7px #000000 !important;
+    font-size: 17.5px;
 }
 
 .ser-ind-info p {
@@ -868,10 +910,15 @@ footer {
 }
 
 .company-links li {
-    color: var(--text-color);
+    color: var(--para-color);
     list-style-type: none;
     line-height: 1.9;
     font-size: 15px;
+    transition: .5s;
+}
+
+.company-links li:hover {
+    color: var(--text-color);
 }
 
 #address li {
@@ -891,6 +938,22 @@ footer {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
+    #background-video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100% !important;
+        min-height: 100% !important;
+        width: auto !important;
+        z-index: -1;
+        opacity: .3;
+        filter: blur(3px) !important;
+        transition: transform 0.5s ease, filter 0.5s ease;
+    }
+    .believe-content div {
+        width: 100%;
+    }
     .ser-ind-box i {
         font-size: 1.3rem;
     }
@@ -941,7 +1004,8 @@ footer {
     .info-content h1,
     .about-content h1,
     .ser-ind-content h1,
-    #contact h1 {
+    #contact h1,
+    #team h1 {
         font-size: 35px !important;
     }
     .home-content p,
@@ -951,7 +1015,8 @@ footer {
     .info-content p,
     .about-content p,
     .ser-ind-content p,
-    #contact p {
+    #contact p,
+    #beleive p {
         font-size: 14px;
     }
     .contact-input-box p {
@@ -980,9 +1045,15 @@ footer {
     .center-main::before {
         display: none;
     }
+    .technology-info p {
+        font-size: 13px !important;
+    }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+    .believe-content div {
+        width: 100%;
+    }
     .company-logo {
         width: 150px;
         position: relative;
@@ -1089,7 +1160,8 @@ footer {
     .info-content h1,
     .about-content h1,
     .ser-ind-content h1,
-    #contact h1 {
+    #contact h1,
+    #team h1 {
         font-size: 35px !important;
     }
     .home-content p,
@@ -1099,7 +1171,8 @@ footer {
     .info-content p,
     .about-content p,
     .ser-ind-content p,
-    #contact p {
+    #contact p,
+    #beleive p {
         font-size: 15px;
     }
     .home-content a {
@@ -1120,10 +1193,6 @@ footer {
     }
     .section-head {
         font-size: 35px !important;
-    }
-    .believe-img {
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-        width: 100% !important;
     }
     .services-para {
         font-size: 15px !important;
@@ -1146,6 +1215,9 @@ footer {
     }
     .technology-info h3 {
         font-size: 16px !important;
+    }
+    .technology-info p {
+        font-size: 13px !important;
     }
     #center {
         overflow: hidden !important;
@@ -1185,7 +1257,6 @@ footer {
         flex-direction: column;
         align-items: center;
         border-radius: 10px;
-        background: linear-gradient(to right, var(--box-bg-color) 0%, var(--box-bg-color) 50%, var(--bg-color-prmiary) 50%, var(--bg-color-prmiary) 100%);
     }
     #contact span {
         font-size: 15px;
@@ -1208,6 +1279,12 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .believe-3 {
+        width: 100% !important;
+    }
+    .believe-content div {
+        width: 46%;
+    }
     .ser-ind-box i {
         font-size: 1.3rem;
     }
@@ -1263,7 +1340,8 @@ footer {
     .info-content h1,
     .about-content h1,
     .ser-ind-content h1,
-    #contact h1 {
+    #contact h1,
+    #team h1 {
         font-size: 35px !important;
     }
     .home-content p,
@@ -1273,7 +1351,8 @@ footer {
     .info-content p,
     .about-content p,
     .ser-ind-content p,
-    #contact p {
+    #contact p,
+    #beleive p {
         font-size: 14px !important;
     }
     .contact-input-box p {
@@ -1299,9 +1378,31 @@ footer {
     .center-main::before {
         display: none;
     }
+    #background-video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100% !important;
+        min-height: 100% !important;
+        width: auto !important;
+        z-index: -1;
+        opacity: .3;
+        filter: blur(3px) !important;
+        transition: transform 0.5s ease, filter 0.5s ease;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #beleive h1 {
+        width: 75%;
+    }
+    .believe-content div {
+        width: 47%;
+    }
+    .believe-3 {
+        width: 100% !important;
+    }
     .ser-ind-box i {
         font-size: 1rem;
     }
@@ -1333,7 +1434,7 @@ footer {
     }
     .logo-main img {
         top: -70;
-        left: -50;
+        left: -90;
     }
     .company-logo {
         width: 170px;
@@ -1359,7 +1460,8 @@ footer {
     .info-content h1,
     .about-content h1,
     .ser-ind-content h1,
-    #contact h1 {
+    #contact h1,
+    #team h1 {
         font-size: 35px !important;
     }
     .home-content p,
@@ -1369,7 +1471,8 @@ footer {
     .info-content p,
     .about-content p,
     .ser-ind-content p,
-    #contact p {
+    #contact p,
+    #beleive p {
         font-size: 14px;
     }
     .contact-input-box p {
@@ -1409,7 +1512,24 @@ footer {
     }
 }
 
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: auto !important;
+    z-index: -1;
+    opacity: .3;
+    filter: blur(3px) !important;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    #beleive h1 {
+        width: 75%;
+    }
     #fullx,
     #full {
         margin-top: -60 !important;
@@ -1448,7 +1568,8 @@ footer {
     .info-content h1,
     .about-content h1,
     .ser-ind-content h1,
-    #contact h1 {
+    #contact h1,
+    #team h1 {
         font-size: 35px !important;
     }
     .home-content p,
@@ -1458,7 +1579,8 @@ footer {
     .info-content p,
     .about-content p,
     .ser-ind-content p,
-    #contact p {
+    #contact p,
+    #beleive p {
         font-size: 14px;
     }
     .contact-input-box p {
@@ -1489,6 +1611,9 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 2299px) {
+    #beleive h1 {
+        width: 75%;
+    }
     .ser-ind-box i {
         font-size: 1.3rem;
     }

@@ -4,7 +4,7 @@
 {% endblock title %}
 {% block content %}
 <div id="full" class='zoom-div'>
-    <section id="ind" class="col-11 m-auto col-lg-10 px-0 pt-5 pt-lg-5" data-aos='zoom-in'>
+    <section id="ind" class="col-11 m-auto col-lg-10 px-0 pt-5 pt-lg-5 mt-3" data-aos='zoom-in'>
         <div class="ind-box d-flex justify-content-center align-items-center">
             <h1>About us</h1>
         </div>
@@ -194,8 +194,8 @@
         </div>
     </section>
     <section id="team" class="col-lg-10 col-11 m-auto d-flex flex-column justify-content-center align-items-center ">
-        <h1 class='text-center'>Awesome Team</h1>
-        <div class="row team-flex mt-3 col-12 d-flex flex-lg-row flex-row justify-content-between">
+        <h1 class='text-center mb-5'>meet our specialist</h1>
+        <div class="row team-flex mt-3 col-12 d-flex flex-lg-row flex-row justify-content-center gap-5">
             {% for member,details in team_function.items %}
             <div class=" team-box col-lg-4 p-5">
                 <img src="{% static "images/" %}{{ details.image }}" alt="" class="img-fluid mb-3">
